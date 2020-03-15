@@ -1,8 +1,5 @@
-# semi-dehazing
-
-
-Semi-supervised single image dehazing.
-
+# Semi-supervised single image dehazing
+Codes for Semi-supervised single image dehazing.
 ## dependency
 * ```pytorch >= 1.0 ```
 * ```visdom ```
@@ -19,10 +16,17 @@ The you can train the model by:
 python  train.py  --dataroot ./datasets/dehazing --name run_id_1 --learn_residual  --display_freq 100 --print_freq 100 --display_port 8097 --which_model_netG EDskipconn --lambda_vgg 10 --lambda_mse 1000 --lambda_ssim 0 --niter 90 --niter_decay 0 --fineSize 256 --no_html --lambda_DC 1e-4 --lambda_TV 1e-4 --gpu_id 0 --update_ratio 1 --unlabel_decay 0.99 --save_epoch_freq 1 --semi --patch_size 7 --batch_size 2
 ```
 ## Test
-You can test you model on RESIDE SOTS dataset.
+You can test you model on RESIDE SOTS [dataset](https://sites.google.com/view/reside-dehaze-datasets/reside-v0).
 ```
-python test.py --learn_residual --which_model_netG EDskipconn --gpu_id 0 --no_html --which_epoch latest
+python test.py --name run_id 1 --learn_residual --which_model_netG EDskipconn --gpu_id 0 --no_html --which_epoch latest
 ```
-
-RESIDE dataset:
-B. Li, W. Ren, D. Fu, D. Tao, D. Feng, W. Zeng, and Z. Wang. Benchmarking single-image dehazing and beyond. IEEE Transactions on Image Processing, 2019.
+## Refenrece:
+@article{li2019semi,
+  title={Semi-supervised image dehazing},
+  author={Li, Lerenhan and Dong, Yunlong and Ren, Wenqi and Pan, Jinshan and Gao, Changxin and Sang, Nong and Yang, Ming-Hsuan},
+  journal={IEEE Transactions on Image Processing},
+  volume={29},
+  pages={2766--2779},
+  year={2019},
+  publisher={IEEE}
+}
