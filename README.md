@@ -21,6 +21,7 @@ You can test you model on RESIDE SOTS [dataset](https://sites.google.com/view/re
 python test.py --name run_id 1 --learn_residual --which_model_netG EDskipconn --gpu_id 0 --no_html --which_epoch latest
 ```
 ## Refenrece:
+```
 @article{li2019semi,
   title={Semi-supervised image dehazing},
   author={Li, Lerenhan and Dong, Yunlong and Ren, Wenqi and Pan, Jinshan and Gao, Changxin and Sang, Nong and Yang, Ming-Hsuan},
@@ -30,3 +31,4 @@ python test.py --name run_id 1 --learn_residual --which_model_netG EDskipconn --
   year={2019},
   publisher={IEEE}
 }
+```
