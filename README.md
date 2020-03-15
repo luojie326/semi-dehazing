@@ -1,5 +1,6 @@
 # Semi-supervised single image dehazing
 Codes for Semi-supervised single image dehazing.
+![](https://github.com/yunlongdong/semi-dehazing/blob/master/semi-dehazing.png)
 ## dependency
 * ```pytorch >= 1.0 ```
 * ```visdom ```
